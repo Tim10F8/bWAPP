@@ -190,7 +190,7 @@ function htmli($data)
         <font size="4">Current: <b><?php echo $security_level?></b></font>
 
     </form>
-<!-- FAKE_ADMIN_PASSWORD:TryToTakeOverTheWorld -->
+
 </div>
 
 <?php require_once('_select_inc.php'); ?>
