@@ -50,7 +50,7 @@ $AIM_exclusions = array("aim.php", "ba_logout.php", "cs_validation.php", "csrf_1
 // Possible values: 0 (off) or 1 (on)
 $evil_bee = 0;
 
-$AWS_KEY = 'AKIAX7EFFWBWFRW3ACIR'
+$AWS_KEY = 'AKIAX7EFFWBWFRW3ACIR';
 
 // Static credentials
 // These credentials are used on some PHP pages
