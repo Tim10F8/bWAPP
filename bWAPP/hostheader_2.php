@@ -100,14 +100,14 @@ if(isset($_POST["action"]))
 
             }
 
-            // If the security level is MEDIUM or HIGH            
+            // If the security level is MEDIUM or HIGH
             else
             {
 
                 $server = "itsecgames.com";
 
             }
-            
+
             $sender = $smtp_sender;
 
             $email_enc = urlencode($email);
@@ -115,8 +115,10 @@ if(isset($_POST["action"]))
             $content = "Hello " . ucwords($login) . ",\n\n";
             $content.= "Click the link to reset and change your secret: http://" . $server . "/bWAPP/secret_change.php?email=" . $email_enc . "&reset_code=" . $reset_code . "\n\n";
             $content.= "Greets from bWAPP!";
+            echo $content;
 
-            $status = @mail($email, $subject, $content, "From: $sender");
+            // $status = @mail($email, $subject, $content, "From: $sender");
+            $status = true;
 
             if($status != true)
             {

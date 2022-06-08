@@ -35,7 +35,7 @@ if($_COOKIE["security_level"] != "1" && $_COOKIE["security_level"] != "2")
 {
 
 ?>
-<link rel="stylesheet" type="text/css" href="http://<?php echo $_SERVER["HTTP_HOST"]?>/bWAPP/stylesheets/stylesheet.css" media="screen" />
+<link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen" />
 <?php
 
 }
