@@ -45,7 +45,7 @@ if(isset($_POST["action"]))
         $sql = "SELECT * FROM users WHERE email = '" . $email . "'";
 
         // Debugging
-        // echo $sql;    
+        // echo $sql;
 
         $recordset = $link->query($sql);
 
@@ -79,7 +79,8 @@ if(isset($_POST["action"]))
 
                 $secret = $row->secret;
 
-                $message = "Hello " . ucwords($login) . "! Your secret: <b>" . $secret . "</b>";
+                // $message = "Hello " . ucwords($login) . "! Your secret: <b>" . $secret . "</b>";
+                $message = "Check your mailbox, you'll get an email from us.";
 
             }
 
@@ -162,7 +163,7 @@ if(isset($_POST["action"]))
 
                 $content = "Hello " . ucwords($login) . ",\n\n";
                 $content.= "Click the link to reset and change your secret: http://" . $server . "/bWAPP/secret_change.php?email=" . $email_enc . "&reset_code=" . $reset_code . "\n\n";
-                $content.= "Greets from bWAPP!";                 
+                $content.= "Greets from bWAPP!";
 
                 $status = @mail($email, $subject, $content, "From: $sender");
 
