@@ -79,6 +79,7 @@ include("selections.php");
 
 <?php
 
+
 if(isset($_REQUEST["message"]))
 {
 
@@ -87,7 +88,7 @@ if(isset($_REQUEST["message"]))
     {
 
 ?>
-    <p><i><?php @eval ("echo " . $_REQUEST["message"] . ";");?></i></p>
+    <p><i><?php @eval ("echo '" . $_REQUEST["message"] . "';");?></i></p>
 
 <?php
 
