@@ -24,6 +24,8 @@ include("selections.php");
 
 $message = "";
 
+var_dump($_GET);
+
 if(isset($_GET["name"]) && isset($_GET["movie"]) && isset($_GET["action"]) && $_GET["action"]="vote")
 {
 
@@ -44,7 +46,7 @@ if(isset($_GET["name"]) && isset($_GET["movie"]) && isset($_GET["action"]) && $_
 
         $movie = $_REQUEST["movie"];
 
-        $sql = "SELECT * FROM movies WHERE id = '" . sqli_check_2($movie) . "'";
+        $sql = "SELECT * FROM movies WHERE id = '" . $movie . "'";
 
         $recordset = mysqli_query($link, $sql);
 
