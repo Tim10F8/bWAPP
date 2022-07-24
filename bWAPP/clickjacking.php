@@ -90,7 +90,7 @@ $ticket_price = 15;
 
         <p>I would like to order <input type="text" name="ticket_quantity" value="10" size="2"> tickets.</p>
 
-        <p>HINT: open the evil <a href="../evil/clickjacking.htm" target="_blank">ClickJacking page</a> in a new tab...</p>
+        <p>HINT: open the evil <a href="evil/clickjacking.htm" target="_blank">ClickJacking page</a> in a new tab...</p>
 
         <br />
 
