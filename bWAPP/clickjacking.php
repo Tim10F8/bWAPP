@@ -86,7 +86,7 @@ $ticket_price = 15;
 
     <form action="<?php echo($_SERVER["SCRIPT_NAME"]);?>" method="POST">
 
-        <p>How many movie tickets would you like to order? (<?php echo $ticket_price ?> EUR per ticket)</p>
+        <p>How many movie tickets would you like to order? (<span style="color:#F00;"><b><?php echo $ticket_price ?> EUR per ticket</b></span>)</p>
 
         <p>I would like to order <input type="text" name="ticket_quantity" value="10" size="2"> tickets.</p>
 
