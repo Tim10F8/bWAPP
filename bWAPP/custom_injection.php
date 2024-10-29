@@ -94,23 +94,30 @@ $js = isset($_GET['js']) ? $_GET['js'] : '';
     <p>These inputs will be echoed back in different contexts: </p>
 
     <form action="<?php echo($_SERVER["SCRIPT_NAME"]);?>" method="GET">
-
-        <p><label for="email">HTML:</label><br />
+        <p><label for="email">Break the page with some HTML:</label><br />
         <input type="text" name="html"></p>
-
-        <p><label for="email">CSS:</label><br />
-        <input type="text" name="css"></p>
-
-        <p><label for="email">JavaScript:</label><br />
-        <input type="text" name="js"></p>
-
         <button type="submit" name="action" value="Submit">Submit</button>
+    </form>
+    </br >
+    </br >
 
+    <form action="<?php echo($_SERVER["SCRIPT_NAME"]);?>" method="GET">
+        <p><label for="email">Break the page with some CSS:</label><br />
+        <input type="text" name="css"></p>
+        <button type="submit" name="action" value="Submit">Submit</button>
+    </form>
+    </br >
+    </br >
+
+    <form action="<?php echo($_SERVER["SCRIPT_NAME"]);?>" method="GET">
+        <p><label for="email">Break the page with some JavaScript:</label><br />
+        <input type="text" name="js"></p>
+        <button type="submit" name="action" value="Submit">Submit</button>
     </form>
 
     </br >
 
-    html render: <input type="text" name="" value="<?php echo $html; ?>">
+    <input type="hidden" name="" value="<?php echo $html; ?>">
     <?php
 
     $link->close();
