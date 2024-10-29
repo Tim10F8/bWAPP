@@ -122,10 +122,10 @@ function commandi($data)
     </form>
     <?php
 
-    if(isset($_POST["target"]))
+    if(isset($_REQUEST["target"]))
     {
 
-        $target = $_POST["target"];
+        $target = $_REQUEST["target"];
 
         if($target == "")
         {
@@ -136,7 +136,7 @@ function commandi($data)
 
         else
         {
-
+            var_dump($target);
             echo "Did you captured our GOLDEN packet?";
 
             if(PHP_OS == "Windows" or PHP_OS == "WINNT" or PHP_OS == "WIN32")
@@ -192,7 +192,7 @@ function commandi($data)
 
 <div id="security_level">
 
-    <form action="<?php echo($_SERVER["SCRIPT_NAME"]);?>" method="POST">
+    <form action="<?php echo($_SERVER["SCRIPT_NAME"]);?>" method="GET">
 
         <label>Set your security level:</label><br />
 

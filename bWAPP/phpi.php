@@ -75,7 +75,7 @@ include("selections.php");
 
     <h1>PHP Code Injection</h1>
 
-    <p>This is just a test page, reflecting back your <a href="<?php echo($_SERVER["SCRIPT_NAME"]);?>?message=test">message</a>...</p>
+    <p>This is just a test page, reflecting back your <a href="<?php echo($_SERVER["SCRIPT_NAME"]);?>?message=test" style="color:red">message</a>...</p>
 
 <?php
 

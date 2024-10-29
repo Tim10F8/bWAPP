@@ -135,30 +135,20 @@ $directory_traversal_error = "";
 
 function show_file($file)
 {
-
-    // Checks whether a file or directory exists
-    // if(file_exists($file))
     if(is_file($file))
     {
-
         $fp = fopen($file, "r") or die("Couldn't open $file.");
 
         while(!feof($fp))
         {
-
             $line = fgets($fp,1024);
             echo($line);
             echo "<br />";
-
         }
-
     }
-
     else
     {
-
         echo "This file doesn't exist!";
-
     }
 
 }

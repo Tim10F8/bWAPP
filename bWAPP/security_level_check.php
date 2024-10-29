@@ -33,10 +33,11 @@ if(($min = ip2long($ip)) !== false)
 if(!(isset($_COOKIE["security_level"])) && !(in_array($_SERVER["REMOTE_ADDR"], $AIM_IPs)) && !(in_array($_SERVER["REMOTE_ADDR"], $addresses)))
 {
 
-    header("Location: security_level_set.php");
-    
-    exit;
- 
+    $_COOKIE["security_level"] = 0;
+    // header("Location: security_level_set.php");
+
+    // exit;
+
 }
 
 ?>

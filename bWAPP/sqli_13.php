@@ -22,6 +22,8 @@ include("selections.php");
 include("functions_external.php");
 include("connect.php");
 
+ini_set('display_errors',E_ALL);
+
 if($_COOKIE["security_level"] == "2")
 {
 

@@ -108,7 +108,7 @@ function commandi($data)
 
     <h1>OS Command Injection</h1>
 
-    <form action="<?php echo($_SERVER["SCRIPT_NAME"]);?>" method="POST">
+    <form action="<?php echo($_SERVER["SCRIPT_NAME"]);?>" method="GET">
 
         <p>
 
@@ -122,10 +122,10 @@ function commandi($data)
     </form>
     <?php
 
-    if(isset($_POST["target"]))
+    if(isset($_REQUEST["target"]))
     {
 
-        $target = $_POST["target"];
+        $target = $_REQUEST["target"];
 
         if($target == "")
         {

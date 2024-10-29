@@ -23,6 +23,8 @@ include("selections.php");
 include("functions_external.php");
 include("connect.php");
 
+ini_set('display_errors',E_ALL);
+
 function sqli($data)
 {
 
