@@ -145,7 +145,7 @@ function show_my_cookies()
 
     </form>
 
-    <p>Click <a href="javascript:show_my_cookies()">here</a> to see your cookies with JavaScript.</p>
+    <p>Click <a href="javascript:show_my_cookies()" style="color:red;">here</a> to see your cookies with JavaScript.</p>
 
     <table id="table_yellow">
 
