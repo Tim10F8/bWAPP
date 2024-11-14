@@ -136,7 +136,7 @@ function commandi($data)
 
         else
         {
-            var_dump($target);
+            // var_dump($target);
             echo "Did you captured our GOLDEN packet?";
 
             if(PHP_OS == "Windows" or PHP_OS == "WINNT" or PHP_OS == "WIN32")
