@@ -111,7 +111,7 @@ function sqli($data)
 
     <h1>SQL Injection (Login Form/Hero)</h1>
 
-    <p>Enter your 'superhero' credentials.</p>
+    <p>Enter your 'superhero' credentials: <span style=color:red>neo</span> / <span style=color:red>trinity</span></p>
 
     <form action="<?php echo($_SERVER["SCRIPT_NAME"]);?>" method="POST">
 
@@ -138,8 +138,7 @@ function sqli($data)
         $password = sqli($password);
 
         $sql = "SELECT * FROM heroes WHERE login = '" . $login . "' AND password = '" . $password . "'";
-
-        // echo $sql;
+        echo $sql;
 
         $recordset = mysqli_query($link, $sql);
 
