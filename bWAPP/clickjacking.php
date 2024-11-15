@@ -97,7 +97,8 @@ $ticket_price = 15;
 <br />
 <br />
 
-<p>HINT: open the evil <a href="evil/cj.php" target="_blank">ClickJacking page</a> in a new tab...</p>
+<p>HINT: open the evil <a href="evil/cj.php" target="_blank" style="color:red">ClickJacking page</a> in a new tab...</p>
+<br />
 
 
 <?php
