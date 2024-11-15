@@ -115,7 +115,7 @@ function sqli($data)
 
     <p>Enter your 'superhero' credentials: <span style=color:red>neo</span> / <span style=color:red>trinity</span></p>
 
-    <form action="<?php echo($_SERVER["SCRIPT_NAME"]);?>" method="POST">
+    <form action="<?php echo($_SERVER["SCRIPT_NAME"]);?>" method="GET">
 
         <p><label for="login">Login:</label><br />
         <input type="text" id="login" name="login" size="20" autocomplete="off" /></p>
@@ -207,7 +207,7 @@ function sqli($data)
 
 <div id="security_level">
 
-    <form action="<?php echo($_SERVER["SCRIPT_NAME"]);?>" method="GET">
+    <form action="<?php echo($_SERVER["SCRIPT_NAME"]);?>" method="POST">
 
         <label>Set your security level:</label><br />
 
