@@ -130,13 +130,13 @@ function sqli($data)
     <br />
 <?php
 
-    if(isset($_POST["form"]))
+    if(isset($_REQUEST["form"]))
     {
 
-        $login = $_POST["login"];
+        $login = $_REQUEST["login"];
         $login = sqli($login);
 
-        $password = $_POST["password"];
+        $password = $_REQUEST["password"];
         $password = sqli($password);
 
         $sql = "SELECT * FROM heroes WHERE login = '" . $login . "' AND password = '" . $password . "'";
@@ -207,7 +207,7 @@ function sqli($data)
 
 <div id="security_level">
 
-    <form action="<?php echo($_SERVER["SCRIPT_NAME"]);?>" method="POST">
+    <form action="<?php echo($_SERVER["SCRIPT_NAME"]);?>" method="GET">
 
         <label>Set your security level:</label><br />
 
