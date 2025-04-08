@@ -72,9 +72,9 @@ if(!$recordset)
 // Writes the entry into a text file
 $line = "'" . date("y/m/d G.i:s", time()) . "', '" . $ip_address . "', '" . xss($user_agent) . "'" . "\r\n";
 
-$fp = fopen("logs/visitors.txt", "a");
-fputs($fp, $line, 200);
-fclose($fp);
+//$fp = fopen("logs/visitors.txt", "a");
+//fputs($fp, $line, 200);
+//fclose($fp);
 
 // Selects all the records
 $sql = "SELECT * FROM visitors ORDER by id DESC LIMIT 3";
