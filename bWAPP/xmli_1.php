@@ -72,7 +72,8 @@ if(isset($_REQUEST["login"]) & isset($_REQUEST["password"]))
     $password = xmli($password);
 
     // Loads the XML file
-    $xml = simplexml_load_file("passwords/heroes.xml");
+    // $xml = simplexml_load_file("passwords/heroes.xml");
+    $xml = simplexml_load_file("passwords/heroes.xml", 'SimpleXMLElement', LIBXML_NOENT);
 
     // XPath search
     $result = $xml->xpath("/heroes/hero[login='" . $login . "' and password='" . $password . "']");

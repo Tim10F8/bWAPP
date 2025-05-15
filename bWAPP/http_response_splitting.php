@@ -41,6 +41,7 @@ if(isset($_GET["url"]) && ($_COOKIE["security_level"] != "1" && $_COOKIE["securi
     // echo "Not sanitized: " . $_GET["url"];
 
     header("Location: " . $_GET["url"]);
+    // setcookie('test',$_GET["c"]);
 
     exit;
 
@@ -138,7 +139,7 @@ if(isset($_GET["url"]) && ($_COOKIE["security_level"] != "1" && $_COOKIE["securi
 
             <option value="0">low</option>
             <option value="1">medium</option>
-            <option value="2">high</option> 
+            <option value="2">high</option>
 
         </select>
 

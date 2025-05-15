@@ -151,7 +151,8 @@ if(isset($_REQUEST["genre"]))
     $genre = xmli($genre);
 
     // Loads the XML file
-    $xml = simplexml_load_file("passwords/heroes.xml");
+    // $xml = simplexml_load_file("passwords/heroes.xml");
+    $xml = simplexml_load_file("passwords/heroes.xml", 'SimpleXMLElement', LIBXML_NOENT);
 
     // XPath search
     // $result = $xml->xpath("//hero[genre = '$genre']/movie");
